@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Антохин Олег | Финансовый контролер AdTech & iGaming</title>
+    <meta name="description" content="Финансовый контролер, автоматизация и учет спендов, операционное управление офферами. 7+ лет опыта в iGaming.">
+    <style>
+        :root {
+            --primary: #0f172a;
+            --accent: #2563eb;
+            --bg: #f8fafc;
+            --text: #334155;
+            --card-bg: #ffffff;
+            --border: #e2e8f0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--bg);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        /* Header */
+        header {
+            background: var(--primary);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0 0 15px 0;
+            font-size: 2.4rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        header h2 {
+            margin: 0 0 25px 0;
+            font-size: 1.15rem;
+            font-weight: 400;
+            color: #94a3b8;
+            line-height: 1.4;
+        }
+        .contact-info {
+            font-size: 1rem;
+            color: #cbd5e1;
+            margin-bottom: 30px;
+        }
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            border-bottom: 1px dashed #94a3b8;
+            transition: border-color 0.2s;
+        }
+        .contact-info a:hover { border-color: white; }
+        
+        .btn {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 14px 32px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1.05rem;
+            transition: background 0.2s, transform 0.1s;
+        }
+        .btn:hover { background: #1d4ed8; transform: translateY(-2px); }
+
+        /* Sections */
+        section {
+            background: var(--card-bg);
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            margin-bottom: 30px;
+        }
+        h3 {
+            color: var(--primary);
+            border-left: 4px solid var(--accent);
+            padding-left: 15px;
+            margin-top: 0;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        .intro-text {
+            font-size: 1.1rem;
+            color: #475569;
+        }
+
+        /* Cubes Grid */
+        .value-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 25px;
+        }
+        .value-card {
+            background: #f8fafc;
+            border: 1px solid var(--border);
+            padding: 25px;
+            border-radius: 10px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .value-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+        }
+        .value-card strong {
+            color: var(--primary);
+            display: block;
+            margin-bottom: 12px;
+            font-size: 1.1rem;
+        }
+        .value-card p {
+            margin: 0;
+            font-size: 0.95rem;
+            color: #64748b;
+        }
+
+        /* Lists */
+        ul {
+            padding-left: 20px;
+            margin: 15px 0;
+        }
+        li {
+            margin-bottom: 12px;
+            color: #475569;
+        }
+        li strong { color: var(--primary); }
+
+        /* Tags */
+        .stack-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .tag {
+            background: #e0e7ff;
+            color: #3730a3;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        /* Experience */
+        .exp-item {
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 25px;
+            margin-bottom: 25px;
+        }
+        .exp-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .exp-title {
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 1.15rem;
+            margin-bottom: 5px;
+        }
+        .exp-company {
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        .exp-date {
+            color: #64748b;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+        .footer-cta {
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+        .footer-cta h3 { color: white; border-color: var(--accent); display: inline-block; }
+        .footer-cta p { color: #cbd5e1; max-width: 600px; margin: 0 auto 25px auto; }
+
+        @media (max-width: 768px) {
+            .value-grid { grid-template-columns: repeat(2, 1fr); }
+            header h1 { font-size: 2rem; }
+            header h2 { font-size: 1rem; }
+            .container { padding: 20px 15px; }
+            section { padding: 25px 20px; }
+        }
+        @media (max-width: 480px) {
+            .value-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container" style="padding: 0;">
+        <h1>Антохин Олег</h1>
+        <h2>Финансовый контролер в AdTech и iGaming | Автоматизация и контроль спендов | Операционное управление офферами (Affise, трекеры)</h2>
+        <div class="contact-info">
+            📍 Санкт-Петербург (Remote) &nbsp;|&nbsp; 
+            ️ <a href="https://t.me/WorkerMan700">@WorkerMan700</a> &nbsp;|&nbsp; 
+            ✉️ <a href="mailto:thoparit@gmail.com">thoparit@gmail.com</a>
+        </div>
+        <a href="https://t.me/WorkerMan700" class="btn">Написать в Telegram</a>
+    </div>
+</header>
+
+<div class="container">
+
+    <section>
+        <p class="intro-text">7+ лет занимался финансами и платежной инфраструктурой в крупном iGaming-холдинге (оборот $200M+). Параллельно построил отдел коммерческого саппорта с нуля: сам набирал сотрудников в команду, поставил поток заведения 50 000+ офферов в год. Понимаю, как устроен медиабаинг изнутри. Готов прийти в команду на full-time или part-time — как договоримся.</p>
+        
+        <div class="value-grid">
+            <div class="value-card">
+                <strong>💳 Управление картами и транзакциями</strong>
+                <p>Вел до 1000 карт, выдавал карты 200 байерам, контролировал все транзакции. Построил отдел саппорта по картам с нуля.</p>
+            </div>
+            <div class="value-card">
+                <strong> Автоматизация рутины</strong>
+                <p>Пишу скрипты на Python и Google Sheets, чтобы не делать сверки вручную. Экономлю время и исключаю ошибки.</p>
+            </div>
+            <div class="value-card">
+                <strong>📊 Точный учет и сверки</strong>
+                <p>Сводил данные байеров, фармеров и ERP-системы с 0% погрешности. Наладил учет холдов и возвратов.</p>
+            </div>
+            <div class="value-card">
+                <strong>🛡️ Никаких кассовых разрывов</strong>
+                <p>При спенде $150-600k/сутки баинг работал без остановок. Своевременно пополнял карты, контролировал лимиты.</p>
+            </div>
+            <div class="value-card">
+                <strong>👥 Построение процессов и управление командой</strong>
+                <p>Собрал отдел коммерческого саппорта с нуля (8 человек). Наладил поток заведения 50 000+ офферов в год с браком &lt;0,2%. Сам искал и нанимал сотрудников.</p>
+            </div>
+            <div class="value-card">
+                <strong> Аудит и оптимизация расходов</strong>
+                <p>Выявлял утечки бюджета, контролировал комиссии платежных систем. Наладил системный учет холдов и возвратов (refunds), чтобы деньги не зависали.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h3>Что конкретно делаю</h3>
+        <ul>
+            <li><strong>Управление картами и транзакциями:</strong> Открытие/закрытие карт, выдача 200+ байерам, контроль балансов и лимитов, работа с кодами авторизации, сверка всех расходов. Вел до 1000 карт одновременно.</li>
+            <li><strong>Автоматизация сверок:</strong> Пишу скрипты (Python, SikuliX, Google Sheets API), которые сами выгружают и сверяют данные из трекеров (Binom/Affise), ERP и платежек. Сократил ручную работу на 80%+, 0% погрешности.</li>
+            <li><strong>Контроль холдов и возвратов:</strong> Системный учет холдов, оформление refunds, возврат зависших средств. Сохранял ликвидность оборотных средств компании.</li>
+            <li><strong>Построение процессов и управление командой:</strong> Создал отдел коммерческого саппорта с нуля (8 человек), который заводил 50 000+ офферов в год с браком менее 0,2%. Сам искал и нанимал сотрудников, выстраивал регламенты (SLA 1.3-2.4 часа).</li>
+            <li><strong>Аудит расходов и оптимизация:</strong> Контролировал спенд $4-7M/месяц. Выявлял утечки бюджета, переплаты по комиссиям, находил точки оптимизации.</li>
+            <li><strong>Защита от кассовых разрывов:</strong> При спенде $150-600k/сутки баинг работал без остановок. Своевременно пополнял карты, контролировал лимиты.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Инструменты</h3>
+        <div class="stack-tags">
+            <span class="tag">Python</span>
+            <span class="tag">SikuliX (RPA)</span>
+            <span class="tag">Google Sheets + Apps Script</span>
+            <span class="tag">Facebook Ads</span>
+            <span class="tag">Affise</span>
+            <span class="tag">Binom</span>
+            <span class="tag">Keitaro</span>
+            <span class="tag">ERP-системы</span>
+            <span class="tag">Anti-detect браузеры</span>
+            <span class="tag">Asana</span>
+            <span class="tag">Telegram</span>
+        </div>
+    </section>
+
+    <section>
+        <h3>Опыт работы</h3>
+        
+        <div class="exp-item">
+            <div class="exp-title">Head of Spend Infrastructure / Финансовый контролер</div>
+            <div class="exp-company">Confidential Media Buying Holding (iGaming / Affiliate Marketing)</div>
+            <div class="exp-date">Июнь 2020 — Август 2026 (6 лет 3 месяца)</div>
+            <ul>
+                <li>Контролировал спенд $4-7M в месяц (общий оборот $200M+). Сводил данные с 0% ошибок.</li>
+                <li>Вел до 1000 виртуальных карт: выдача 200 байерам, открытие/закрытие, контроль транзакций, коды авторизации.</li>
+                <li>Построил отдел саппорта по картам с нуля. Параллельно руководил отделом коммерческого саппорта (8 человек) — заводили 50 000+ офферов в год, брак &lt;0,2%, SLA 1.3-2.4 часа.</li>
+                <li>Автоматизировал процессы через Python/SikuliX и Google Sheets — сократил ручную работу на 80%+.</li>
+                <li>Наладил учет холдов и процедуру возвратов (refunds), чтобы деньги не висели мертвым грузом.</li>
+                <li>При дневном спенде $150-600k баинг не останавливался ни разу — вовремя пополнял карты, следил за лимитами.</li>
+            </ul>
+        </div>
+
+        <div class="exp-item">
+            <div class="exp-title">Traffic & Analytics Specialist / Affiliate Manager</div>
+            <div class="exp-company">Confidential Media Buying Holding</div>
+            <div class="exp-date">Май 2019 — Май 2020 (1 год)</div>
+            <ul>
+                <li>Работал с платежками Facebook Ads: привязка карт, прогрев сетапов, запуск кампаний.</li>
+                <li>Настраивал трекинг и аналитику в Binom.</li>
+                <li>Тестировал и лил трафик из разных источников (баннеры, пуши).</li>
+                <li>Работал с антидетект-браузерами, самостоятельно создавал лендинги и креативы.</li>
+            </ul>
+        </div>
+
+        <div class="exp-item">
+            <div class="exp-title">SEO-специалист / Веб-аналитик</div>
+            <div class="exp-company">ООО «РусРеклама», ООО «ВайдАрт»</div>
+            <div class="exp-date">Февраль 2015 — Май 2019 (4 года 4 месяца)</div>
+        </div>
+    </section>
+
+    <section>
+        <h3>Образование</h3>
+        <p><strong>Военно-космическая академия им. А.Ф. Можайского</strong> (Санкт-Петербург)<br>
+        1999, специальность: Сбор и обработка информации<br>
+        Квалификация: Инженер-радиоэлектроник / Радиотехник</p>
+    </section>
+
+    <div class="footer-cta">
+        <h3>Готов обсудить задачи</h3>
+        <p>Работаю и на full-time, и на part-time (10-20 часов в неделю), и проектно. Пишите в Telegram — обсудим, чем могу помочь именно вам.</p>
+        <a href="https://t.me/WorkerMan700" class="btn">Написать в Telegram</a>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 Олег Антохин. Санкт-Петербург.
+</footer>
+
+</body>
+</html>
